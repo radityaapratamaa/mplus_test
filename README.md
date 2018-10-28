@@ -11,6 +11,8 @@
 
 1. Install XAMPP/any web server
 2. Create folder mplus_test inside public folder in your server (ex: /var/www/html or C:/xampp/htdocs/)
-3. Import Database to PHPMyadmin from folder /db
+3. Open PHPMyadmin
+4. Create database named **mplus**
+3. Import Database **from folder /db**
 4. open browser and type **localhost/mplus_test**
 5. Your application is ready to run
