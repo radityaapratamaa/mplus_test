@@ -1,0 +1,20 @@
+version: '2.2'
+services:
+ db:
+  image: mariadb:latest
+  ports:
+   - "3307:3306"
+  environment:
+   - MYSQL_ROOT_PASSWORD=toor
+   - MYSQL_USER=root
+   - MYSQL_DATABASE=mplus
+  volumes:
+   - ./db/testingDb.sql:/docker-entrypoint-initdb.d/testingDb.sql
+ myapp:
+   image: nasrulhazim/php72-oci8
+   ports:
+     - "89:80"
+   volumes:
+     - ./app:/var/www/html
+   links:
+     - db
