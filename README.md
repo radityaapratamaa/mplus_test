@@ -10,7 +10,7 @@
 ## WITHOUT DOCKER
 
 1. Install XAMPP/any web server
-2. Create folder mplus_test inside public folder in your server (ex: /var/www/html or C:/xampp/htdocs/)
+2. Create folder named **mplus_test** inside public folder in your server (ex: **/var/www/html** or **C:/xampp/htdocs/**)
 3. Open PHPMyadmin
 4. Create database named **mplus**
 3. Import Database **from folder /db**
